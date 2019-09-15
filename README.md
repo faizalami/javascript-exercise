@@ -37,7 +37,7 @@ No. | Command | Arguments | Description
 1. | **create_parking_lot** | - number: number of parking slots  | initialize new parking lot slots
 2. | **park** | - registration_number: plate number - colour : car colour | park a car
 3. | **leave** | - slot_number: parking slot number | a car left
-4. | **status** | &nbsp; | print cars in parking area
+4. | **status** | - | print cars in parking area
 5. | **registration_numbers_for_cars_with_colour** | - colour : car colour | find cars registration number using car's colour
 6. | **slot_numbers_for_cars_with_colour** | - colour : car colour | find cars slot number using car's colour
 7. | **slot_number_for_registration_number** | - registration_number: plate number | find cars slot number using car's registration number
