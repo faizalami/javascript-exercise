@@ -7,7 +7,9 @@ class BlackList {
     /**
      * initialize blacklisted contact data store
      */
-    blacklisted = [];
+    constructor() {
+        this.blacklisted = [];
+    }
 
     /**
      * initialize new blacklisted phone data from text file

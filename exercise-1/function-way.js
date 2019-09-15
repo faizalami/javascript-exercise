@@ -1,7 +1,7 @@
 const fs = require('fs');
 
 // to store blacklisted contact data
-const blacklisted = [];
+let blacklisted = [];
 
 /**
  * initialize new blacklisted phone data from text file
