@@ -152,7 +152,7 @@ function start() {
         fs.readFile(filename, 'utf8', (err, data) => {
             if (err) throw err;
 
-            data.split(/(\r\n|\n|\r)/gm).forEach((args) => {
+            data.split(/\r?\n/).forEach((args) => {
                 processCommand(args);
             });
         });
