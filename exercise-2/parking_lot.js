@@ -69,7 +69,11 @@ class ParkingLot {
         const slot_number = parseInt(args[0]);
 
         const slotIndex = this.slotsUsed.indexOf(args);
-        if (slotIndex !== -1) this.slotsUsed.splice(slotIndex, 1);
+        if (slotIndex !== -1) {
+            this.slotsUsed.splice(slotIndex, 1);
+        } else {
+            console.log('Not found');
+        }
 
         const carIndex = this.cars.findIndex(car => car.slot_number === slot_number);
         if (carIndex !== -1) this.cars.splice(carIndex, 1);
